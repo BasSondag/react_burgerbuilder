@@ -16,6 +16,7 @@ class OrderSummary extends Component {
           </li>
         );
       });
+      
     return (
       <Aux>
           <h3>Your Order</h3>
@@ -30,6 +31,7 @@ class OrderSummary extends Component {
             clicked={this.props.purchasedCanceld}>CANCEL</Button>
           <Button
             btnType='Success'
+            orderIngredients={this.props.ingredients}
             clicked={this.props.purchasedContinued}>CONTINUE</Button>
       </Aux>
     );
