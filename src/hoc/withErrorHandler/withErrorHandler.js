@@ -26,7 +26,7 @@ const withErrorHandler = (WrappedComponent, axios) => {
       axios.interceptors.request.eject(this.reqInteceptor);
       axios.interceptors.response.eject(this.resInterceptor);
     }
-    
+
     render () {
       return (
         <Aux>
